@@ -1,177 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal developer page of nullbyte — backend and automation work with Python, APIs, and Windows servers.">
-  <title>nullbyte</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23141311'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='28' fill='%23c4a574'%3ENB%3C/text%3E%3C/svg%3E">
-  <style>
-    :root {
-      --bg: #141311;
-      --bg-elevated: #1c1b18;
-      --fg: #e8e4db;
-      --muted: #9a9487;
-      --accent: #c4a574;
-      --line: #2e2c27;
-      --focus: #e2c99a;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>nullbyte — Backend &amp; Automation Developer</title>
+  <meta name="description" content="nullbyte is a backend and automation developer building Discord bots, API integrations and reliable server tooling with Python.">
+  <meta name="author" content="nullbyte">
+  <meta name="theme-color" content="#07080d">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://nullbyte.is-a.dev/">
 
-    * { box-sizing: border-box; }
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="nullbyte">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="nullbyte — Backend &amp; Automation Developer">
+  <meta property="og:description" content="Discord bots, API integrations and reliable server tooling, written in Python. Built quietly. Kept running.">
+  <meta property="og:url" content="https://nullbyte.is-a.dev/">
+  <meta property="og:image" content="https://nullbyte.is-a.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="nullbyte — Backend and automation developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="nullbyte — Backend &amp; Automation Developer">
+  <meta name="twitter:description" content="Discord bots, API integrations and reliable server tooling, written in Python.">
+  <meta name="twitter:image" content="https://nullbyte.is-a.dev/assets/og-image.png">
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--fg);
-    }
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-    body {
-      min-height: 100vh;
-      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.7;
-      letter-spacing: 0.01em;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 
-    .bar {
-      height: 4px;
-      background: var(--accent);
-    }
-
-    main {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3.25rem 1.5rem 4rem;
-    }
-
-    header {
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 1.75rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .mark {
-      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-      font-size: 0.8rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin: 0 0 0.85rem;
-    }
-
-    h1 {
-      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-      font-weight: 400;
-      font-size: clamp(2.4rem, 7vw, 3.4rem);
-      letter-spacing: -0.03em;
-      line-height: 1.05;
-      margin: 0 0 0.6rem;
-    }
-
-    .lede {
-      margin: 0;
-      color: var(--muted);
-      max-width: 32rem;
-    }
-
-    section + section {
-      margin-top: 2.4rem;
-    }
-
-    h2 {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin: 0 0 0.7rem;
-    }
-
-    p { margin: 0 0 0.9rem; }
-    p:last-child { margin-bottom: 0; }
-
-    ul.skills {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-    }
-
-    ul.skills li {
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 0.25rem 0.8rem;
-      font-size: 0.92rem;
-      color: var(--fg);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 0.18em;
-      text-decoration-thickness: 1px;
-    }
-
-    a:hover { color: var(--focus); }
-
-    a:focus-visible {
-      outline: 2px solid var(--focus);
-      outline-offset: 3px;
-      border-radius: 2px;
-    }
-
-    footer {
-      margin-top: 3.25rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "nullbyte",
+    "url": "https://nullbyte.is-a.dev/",
+    "inLanguage": "en-GB",
+    "description": "Personal site of nullbyte, a backend and automation developer."
+  }
+  </script>
 </head>
 <body>
-  <div class="bar" aria-hidden="true"></div>
-  <main>
-    <header>
-      <p class="mark">Developer page</p>
-      <h1>nullbyte</h1>
-      <p class="lede">Backend and automation work, written quietly and kept running.</p>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="nullbyte — back to top">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="#0a0b12"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#lg)" stroke-width="2" opacity=".7"/><path d="M22 20l-10 12 10 12" fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="34" y="40" width="16" height="5" rx="2.5" fill="url(#lg)"/></svg>
+        <span>null<b>byte</b></span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a class="cta" href="#contact">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div>
+          <p class="badge reveal"><span class="dot" aria-hidden="true"></span> Backend &amp; automation developer</p>
+          <h1 class="reveal" style="--d:.08s">Building systems that<br><span class="grad-text">run quietly</span> and never stop.</h1>
+          <p class="lead reveal" style="--d:.16s">
+            I’m <strong>nullbyte</strong>. I design and build
+            <span class="typed" id="typed" aria-live="off">Discord bots</span><span class="caret" aria-hidden="true"></span>
+            with Python: clean code, dependable APIs and automation that looks after itself.
+          </p>
+          <div class="cta-row reveal" style="--d:.24s">
+            <a class="btn primary" href="#work">
+              View my work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn" href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="term reveal" style="--d:.2s" aria-hidden="true">
+          <div class="term-bar"><i></i><i></i><i></i><span>nullbyte.py</span></div>
+<pre><span class="t-c"># who I am, in a few lines</span>
+<span class="t-k">from</span> dataclasses <span class="t-k">import</span> dataclass
+
+<span class="t-f">@dataclass</span>
+<span class="t-k">class</span> <span class="t-f">Developer</span>:
+    handle   = <span class="t-s">"nullbyte"</span>
+    language = <span class="t-s">"Python"</span>
+    focus    = (
+        <span class="t-s">"Discord bots"</span>,
+        <span class="t-s">"API integrations"</span>,
+        <span class="t-s">"Server automation"</span>,
+    )
+    motto    = <span class="t-s">"Built quietly. Kept running."</span>
+
+<span class="t-k">def</span> <span class="t-f">main</span>():
+    dev = <span class="t-f">Developer</span>()
+    <span class="t-f">print</span>(dev.motto)
+
+<span class="t-k">if</span> __name__ == <span class="t-s">"__main__"</span>:
+    <span class="t-f">main</span>()</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
     <section id="about">
-      <h2>About</h2>
-      <p>I’m a backend and automation developer. Most of my time goes into Python, REST APIs, and Windows servers — building the kind of tools that connect services and keep them reliable without much ceremony.</p>
-      <p>This site is a simple public home for that work. There is no product pitch here, just a place to start.</p>
+      <div class="wrap">
+        <p class="eyebrow reveal">About</p>
+        <h2 class="title reveal" style="--d:.06s">Practical engineering, without the ceremony.</h2>
+        <div class="about-grid">
+          <div class="reveal" style="--d:.12s">
+            <p>I’m a <strong>backend and automation developer</strong>. Most of my time goes into Python, REST APIs and Windows servers: building the tools that connect services together and keep them reliable.</p>
+            <p>I care about <strong>clear code, predictable behaviour and systems that stay up</strong>. That means sensible structure, careful error handling and monitoring that tells you what is happening before anyone has to ask.</p>
+          </div>
+          <ul class="facts reveal" style="--d:.2s">
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+              <span>Python<small>primary language</small></span>
+            </li>
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
+              <span>Backend &amp; servers<small>APIs, services, Windows</small></span>
+            </li>
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>Automation<small>scheduled jobs &amp; monitoring</small></span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>Python</li>
-        <li>Backend automation</li>
-        <li>REST API integrations</li>
-        <li>Service monitoring</li>
-        <li>Windows server administration</li>
-      </ul>
+    <!-- Services -->
+    <section id="services">
+      <div class="wrap">
+        <p class="eyebrow reveal">What I do</p>
+        <h2 class="title reveal" style="--d:.06s">Three things, done properly.</h2>
+        <p class="sub reveal" style="--d:.12s">A focused set of skills, applied with care to the problems that matter.</p>
+
+        <div class="cards">
+          <article class="card reveal" style="--d:.05s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></div>
+            <h3>Discord bots &amp; automation</h3>
+            <p>Responsive, well-structured bots written in Python, from slash commands and notifications to background workers that run around the clock.</p>
+          </article>
+          <article class="card reveal" style="--d:.13s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M9 12h6M12 9v6"/></svg></div>
+            <h3>API integrations</h3>
+            <p>Dependable connections between services. Clean request handling, sensible rate limiting and graceful failure, so data flows where it should.</p>
+          </article>
+          <article class="card reveal" style="--d:.21s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M12 6.5h5M12 17.5h5"/></svg></div>
+            <h3>Server operations</h3>
+            <p>Windows server administration, scheduled jobs and monitoring that keep services healthy, secure and recoverable.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- Stack -->
+    <section id="stack">
+      <div class="wrap">
+        <p class="eyebrow reveal">Toolkit</p>
+        <h2 class="title reveal" style="--d:.06s">The tools I reach for.</h2>
+        <div class="stack">
+          <div class="group reveal" style="--d:.05s">
+            <h3>Languages &amp; services</h3>
+            <ul class="chips">
+              <li class="chip">Python</li>
+              <li class="chip">REST APIs</li>
+              <li class="chip">Discord API</li>
+              <li class="chip">Backend automation</li>
+            </ul>
+          </div>
+          <div class="group reveal" style="--d:.12s">
+            <h3>Operations</h3>
+            <ul class="chips">
+              <li class="chip">Windows server administration</li>
+              <li class="chip">Service monitoring</li>
+              <li class="chip">Scheduled jobs</li>
+              <li class="chip">VDS management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
     <section id="work">
-      <h2>What I work on</h2>
-      <p>I write practical automation: scheduled jobs, API integrations, and monitoring around the services I operate. The focus is on clear scripts, predictable behavior, and systems that stay up.</p>
+      <div class="wrap">
+        <p class="eyebrow reveal">Selected work</p>
+        <h2 class="title reveal" style="--d:.06s">What I build.</h2>
+        <p class="sub reveal" style="--d:.12s">The kinds of project I work on most, described by what they do.</p>
+
+        <div class="work">
+          <article class="project reveal" style="--d:.04s">
+            <span class="num grad-text" aria-hidden="true">01</span>
+            <div>
+              <h3>Discord bots</h3>
+              <p>Python bots that bring information and tooling into the places people already talk. Built to stay online, recover from failure and be easy to extend.</p>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li><span>Python</span></li><li><span>Discord API</span></li></ul>
+          </article>
+          <article class="project reveal" style="--d:.1s">
+            <span class="num grad-text" aria-hidden="true">02</span>
+            <div>
+              <h3>API-driven automation</h3>
+              <p>Integrations that pull from external APIs, process the data and act on it automatically, with careful handling of limits, retries and edge cases.</p>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li><span>Python</span></li><li><span>REST</span></li></ul>
+          </article>
+          <article class="project reveal" style="--d:.16s">
+            <span class="num grad-text" aria-hidden="true">03</span>
+            <div>
+              <h3>Server tooling &amp; monitoring</h3>
+              <p>Scripts and scheduled tasks that keep Windows servers running smoothly, with checks that surface problems early and recover from them cleanly.</p>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li><span>Windows</span></li><li><span>Monitoring</span></li></ul>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>The best way to reach me is through my GitHub profile: <a href="https://github.com/w44mwtksn4-blip">github.com/w44mwtksn4-blip</a>.</p>
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="title">Let’s build something dependable.</h2>
+          <p class="sub">The best way to reach me is through my GitHub profile. Say hello, browse my work or start a conversation.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              github.com/w44mwtksn4-blip
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <footer>
-      <p>nullbyte · personal developer page</p>
-    </footer>
   </main>
+
+  <footer>
+    <div class="wrap">
+      <p><span class="mono">nullbyte</span> · <span id="year"></span> Backend &amp; automation developer</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/main.js" defer></script>
 </body>
 </html>
