@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>nullbyte — Backend &amp; Automation Developer</title>
-  <meta name="description" content="nullbyte is a backend and automation developer building Discord bots, API integrations and reliable server tooling with Python.">
+  <meta name="description" content="nullbyte is a backend and automation developer building Discord bots, API and backend integrations, and VDS automation and deployment with Python.">
   <meta name="author" content="nullbyte">
   <meta name="theme-color" content="#07080d">
   <meta name="color-scheme" content="dark">
@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="nullbyte">
   <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="nullbyte — Backend &amp; Automation Developer">
-  <meta property="og:description" content="Discord bots, API integrations and reliable server tooling, written in Python. Built quietly. Kept running.">
+  <meta property="og:description" content="Discord bots, API and backend integrations, and VDS automation and deployment, written in Python. Built quietly. Kept running.">
   <meta property="og:url" content="https://nullbyte.is-a.dev/">
   <meta property="og:image" content="https://nullbyte.is-a.dev/assets/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
   <meta property="og:image:alt" content="nullbyte — Backend and automation developer">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="nullbyte — Backend &amp; Automation Developer">
-  <meta name="twitter:description" content="Discord bots, API integrations and reliable server tooling, written in Python.">
+  <meta name="twitter:description" content="Discord bots, API and backend integrations, and VDS automation and deployment, written in Python.">
   <meta name="twitter:image" content="https://nullbyte.is-a.dev/assets/og-image.png">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -41,28 +41,33 @@
     "name": "nullbyte",
     "url": "https://nullbyte.is-a.dev/",
     "inLanguage": "en-GB",
-    "description": "Personal site of nullbyte, a backend and automation developer."
+    "description": "Personal site of nullbyte, a backend and automation developer.",
+    "author": { "@type": "Person", "name": "nullbyte", "url": "https://github.com/w44mwtksn4-blip" }
   }
   </script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main" data-i="skip">Skip to content</a>
   <canvas id="bg" aria-hidden="true"></canvas>
   <div class="glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <div class="wrap">
-      <a class="brand" href="#top" aria-label="nullbyte — back to top">
+      <a class="brand" href="#top" aria-label="nullbyte — back to top" data-ia="brand">
         <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="#0a0b12"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#lg)" stroke-width="2" opacity=".7"/><path d="M22 20l-10 12 10 12" fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="34" y="40" width="16" height="5" rx="2.5" fill="url(#lg)"/></svg>
         <span>null<b>byte</b></span>
       </a>
-      <nav class="links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#stack">Stack</a>
-        <a href="#work">Work</a>
-        <a class="cta" href="#contact">Get in touch</a>
+      <nav class="links" aria-label="Primary" data-ia="nav">
+        <a href="#about" data-i="nav_about">About</a>
+        <a href="#services" data-i="nav_services">Services</a>
+        <a href="#work" data-i="nav_work">Work</a>
+        <a href="#process" data-i="nav_process">How I work</a>
+        <div class="lang" role="group" aria-label="Language" data-ia="lang_label">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false" lang="tr">TR</button>
+        </div>
+        <a class="cta" href="#contact" data-i="nav_contact">Get in touch</a>
       </nav>
     </div>
   </header>
@@ -72,21 +77,20 @@
     <section class="hero" id="top">
       <div class="wrap">
         <div>
-          <p class="badge reveal"><span class="dot" aria-hidden="true"></span> Backend &amp; automation developer</p>
-          <h1 class="reveal" style="--d:.08s">Building systems that<br><span class="grad-text">run quietly</span> and never stop.</h1>
-          <p class="lead reveal" style="--d:.16s">
-            I’m <strong>nullbyte</strong>. I design and build
-            <span class="typed" id="typed" aria-live="off">Discord bots</span><span class="caret" aria-hidden="true"></span>
-            with Python: clean code, dependable APIs and automation that looks after itself.
+          <p class="badge reveal"><span class="dot" aria-hidden="true"></span> <span data-i="badge">Backend &amp; automation developer</span></p>
+          <h1 class="reveal" style="--d:.08s"><span data-i="h1a">Discord bots, APIs and servers that</span> <span class="grad-text" data-i="h1b">run quietly</span> <span data-i="h1c">and never stop.</span></h1>
+          <p class="lead reveal" style="--d:.16s" data-i="lead">
+            I’m <strong>nullbyte</strong>. I build <strong>Discord bots</strong>, <strong>API and backend integrations</strong>, and
+            <strong>server and VDS automation and deployment</strong>, all in Python: clean code, dependable services and automation that looks after itself.
           </p>
           <div class="cta-row reveal" style="--d:.24s">
             <a class="btn primary" href="#work">
-              View my work
+              <span data-i="cta_work">View my work</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn" href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-              GitHub
+            <a class="btn" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>
+              <span data-i="cta_talk">Start a project</span>
             </a>
           </div>
         </div>
@@ -102,8 +106,8 @@
     language = <span class="t-s">"Python"</span>
     focus    = (
         <span class="t-s">"Discord bots"</span>,
-        <span class="t-s">"API integrations"</span>,
-        <span class="t-s">"Server automation"</span>,
+        <span class="t-s">"API &amp; backend integrations"</span>,
+        <span class="t-s">"VDS automation &amp; deployment"</span>,
     )
     motto    = <span class="t-s">"Built quietly. Kept running."</span>
 
@@ -120,25 +124,25 @@
     <!-- About -->
     <section id="about">
       <div class="wrap">
-        <p class="eyebrow reveal">About</p>
-        <h2 class="title reveal" style="--d:.06s">Practical engineering, without the ceremony.</h2>
+        <p class="eyebrow reveal" data-i="about_eyebrow">About</p>
+        <h2 class="title reveal" style="--d:.06s" data-i="about_title">Practical engineering, without the ceremony.</h2>
         <div class="about-grid">
           <div class="reveal" style="--d:.12s">
-            <p>I’m a <strong>backend and automation developer</strong>. Most of my time goes into Python, REST APIs and Windows servers: building the tools that connect services together and keep them reliable.</p>
-            <p>I care about <strong>clear code, predictable behaviour and systems that stay up</strong>. That means sensible structure, careful error handling and monitoring that tells you what is happening before anyone has to ask.</p>
+            <p data-i="about_p1">I’m a <strong>backend and automation developer</strong>. Most of my time goes into Python, REST APIs and Windows servers: building the tools that connect services together and keep them reliable.</p>
+            <p data-i="about_p2">I care about <strong>clear code, predictable behaviour and systems that stay up</strong>. That means sensible structure, careful error handling and monitoring that tells you what is happening before anyone has to ask.</p>
           </div>
           <ul class="facts reveal" style="--d:.2s">
             <li class="fact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
-              <span>Python<small>primary language</small></span>
+              <span><span data-i="fact1">Python</span><small data-i="fact1s">primary language</small></span>
             </li>
             <li class="fact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
-              <span>Backend &amp; servers<small>APIs, services, Windows</small></span>
+              <span><span data-i="fact2">Backend &amp; servers</span><small data-i="fact2s">APIs, services, Windows</small></span>
             </li>
             <li class="fact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg>
-              <span>Automation<small>scheduled jobs &amp; monitoring</small></span>
+              <span><span data-i="fact3">Automation</span><small data-i="fact3s">scheduled jobs &amp; monitoring</small></span>
             </li>
           </ul>
         </div>
@@ -148,25 +152,25 @@
     <!-- Services -->
     <section id="services">
       <div class="wrap">
-        <p class="eyebrow reveal">What I do</p>
-        <h2 class="title reveal" style="--d:.06s">Three things, done properly.</h2>
-        <p class="sub reveal" style="--d:.12s">A focused set of skills, applied with care to the problems that matter.</p>
+        <p class="eyebrow reveal" data-i="svc_eyebrow">What I do</p>
+        <h2 class="title reveal" style="--d:.06s" data-i="svc_title">Three things, done properly.</h2>
+        <p class="sub reveal" style="--d:.12s" data-i="svc_sub">A focused set of skills, applied with care to the problems that matter.</p>
 
         <div class="cards">
           <article class="card reveal" style="--d:.05s">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></div>
-            <h3>Discord bots &amp; automation</h3>
-            <p>Responsive, well-structured bots written in Python, from slash commands and notifications to background workers that run around the clock.</p>
+            <h3 data-i="svc1_t">Discord bots</h3>
+            <p data-i="svc1_p">Responsive, well-structured bots written in Python, from slash commands and notifications to background workers that run around the clock.</p>
           </article>
           <article class="card reveal" style="--d:.13s">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M9 12h6M12 9v6"/></svg></div>
-            <h3>API integrations</h3>
-            <p>Dependable connections between services. Clean request handling, sensible rate limiting and graceful failure, so data flows where it should.</p>
+            <h3 data-i="svc2_t">API &amp; backend integrations</h3>
+            <p data-i="svc2_p">Dependable connections between services. Clean request handling, sensible rate limiting and graceful failure, so data flows where it should.</p>
           </article>
           <article class="card reveal" style="--d:.21s">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M12 6.5h5M12 17.5h5"/></svg></div>
-            <h3>Server operations</h3>
-            <p>Windows server administration, scheduled jobs and monitoring that keep services healthy, secure and recoverable.</p>
+            <h3 data-i="svc3_t">Server &amp; VDS automation</h3>
+            <p data-i="svc3_p">Windows VDS setup and deployment, scheduled jobs and monitoring that keep services healthy, secure and recoverable.</p>
           </article>
         </div>
       </div>
@@ -175,25 +179,25 @@
     <!-- Stack -->
     <section id="stack">
       <div class="wrap">
-        <p class="eyebrow reveal">Toolkit</p>
-        <h2 class="title reveal" style="--d:.06s">The tools I reach for.</h2>
+        <p class="eyebrow reveal" data-i="stack_eyebrow">Toolkit</p>
+        <h2 class="title reveal" style="--d:.06s" data-i="stack_title">The tools I reach for.</h2>
         <div class="stack">
           <div class="group reveal" style="--d:.05s">
-            <h3>Languages &amp; services</h3>
+            <h3 data-i="stack_g1">Languages &amp; services</h3>
             <ul class="chips">
               <li class="chip">Python</li>
               <li class="chip">REST APIs</li>
               <li class="chip">Discord API</li>
-              <li class="chip">Backend automation</li>
+              <li class="chip" data-i="chip_backend">Backend automation</li>
             </ul>
           </div>
           <div class="group reveal" style="--d:.12s">
-            <h3>Operations</h3>
+            <h3 data-i="stack_g2">Operations</h3>
             <ul class="chips">
-              <li class="chip">Windows server administration</li>
-              <li class="chip">Service monitoring</li>
-              <li class="chip">Scheduled jobs</li>
-              <li class="chip">VDS management</li>
+              <li class="chip" data-i="chip_win">Windows server administration</li>
+              <li class="chip" data-i="chip_mon">Service monitoring</li>
+              <li class="chip" data-i="chip_jobs">Scheduled jobs</li>
+              <li class="chip" data-i="chip_vds">VDS management</li>
             </ul>
           </div>
         </div>
@@ -203,35 +207,91 @@
     <!-- Work -->
     <section id="work">
       <div class="wrap">
-        <p class="eyebrow reveal">Selected work</p>
-        <h2 class="title reveal" style="--d:.06s">What I build.</h2>
-        <p class="sub reveal" style="--d:.12s">The kinds of project I work on most, described by what they do.</p>
+        <p class="eyebrow reveal" data-i="work_eyebrow">Selected work</p>
+        <h2 class="title reveal" style="--d:.06s" data-i="work_title">Public work, straight from GitHub.</h2>
+        <p class="sub reveal" style="--d:.12s" data-i="work_sub">These are my public repositories, fetched live from GitHub, so what you see here is what exists.</p>
 
-        <div class="work">
-          <article class="project reveal" style="--d:.04s">
-            <span class="num grad-text" aria-hidden="true">01</span>
-            <div>
-              <h3>Discord bots</h3>
-              <p>Python bots that bring information and tooling into the places people already talk. Built to stay online, recover from failure and be easy to extend.</p>
+        <div class="repos solo reveal" id="repos" aria-live="polite" style="--d:.1s">
+          <!-- Rendered from the GitHub API; the card below is the fallback if the API cannot be reached. -->
+          <a class="repo" href="https://github.com/w44mwtksn4-blip/w44mwtksn4-blip.github.io" target="_blank" rel="noopener noreferrer">
+            <div class="repo-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M15 3v6h6"/></svg>
+              <h3>w44mwtksn4-blip.github.io</h3>
+              <span class="arrow" aria-hidden="true">↗</span>
             </div>
-            <ul class="tags" aria-label="Technologies"><li><span>Python</span></li><li><span>Discord API</span></li></ul>
+            <p data-i="repo_site_desc">Personal developer page</p>
+            <div class="repo-meta"><span class="lang-dot" aria-hidden="true"></span><span>HTML</span></div>
+          </a>
+        </div>
+
+        <div class="request reveal" style="--d:.1s">
+          <div>
+            <h3 data-i="req_t">More selected work available on request</h3>
+            <p data-i="req_p">Some of what I build is private or made for other people, so it is not public. If you would like to see examples relevant to your project, just ask.</p>
+          </div>
+          <a class="btn" href="#contact"><span data-i="req_cta">Ask for examples</span></a>
+        </div>
+
+        <h3 class="mini-title reveal" data-i="cap_t">What I build</h3>
+        <ul class="caps reveal">
+          <li><b data-i="cap1_t">Discord bots</b><span data-i="cap1_p">Slash commands, notifications and workers built to stay online and recover from failure.</span></li>
+          <li><b data-i="cap2_t">API-driven automation</b><span data-i="cap2_p">Integrations that pull from external APIs and act on the data, with care for limits, retries and edge cases.</span></li>
+          <li><b data-i="cap3_t">Server tooling &amp; monitoring</b><span data-i="cap3_p">Scripts and scheduled tasks that keep Windows servers running, with checks that surface problems early.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Verifiable proof -->
+    <section id="proof">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i="proof_eyebrow">Track record</p>
+        <h2 class="title reveal" style="--d:.06s" data-i="proof_title">Verifiable, not just claimed.</h2>
+        <p class="sub reveal" style="--d:.12s" data-i="proof_sub">Everything below can be checked independently.</p>
+
+        <div class="proof">
+          <article class="pcard reveal" style="--d:.05s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+            <h3 data-i="p1_t">Live GitHub activity</h3>
+            <dl class="live" id="live" aria-live="polite">
+              <div><dt data-i="p1_repos">Public repositories</dt><dd id="live-repos">–</dd></div>
+              <div><dt data-i="p1_push">Last public push</dt><dd id="live-push">–</dd></div>
+            </dl>
+            <a class="more" href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer"><span data-i="p1_link">Open GitHub profile</span> <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="project reveal" style="--d:.1s">
-            <span class="num grad-text" aria-hidden="true">02</span>
-            <div>
-              <h3>API-driven automation</h3>
-              <p>Integrations that pull from external APIs, process the data and act on it automatically, with careful handling of limits, retries and edge cases.</p>
-            </div>
-            <ul class="tags" aria-label="Technologies"><li><span>Python</span></li><li><span>REST</span></li></ul>
+          <article class="pcard reveal" style="--d:.13s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.2 8 8 9 4.8-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3 data-i="p2_t">Verified domain</h3>
+            <p data-i="p2_p"><span class="mono">nullbyte.is-a.dev</span> is registered through the open-source is-a.dev register and is linked to my Discord profile as a verified domain.</p>
+            <a class="more" href="https://github.com/is-a-dev/register/blob/main/domains/nullbyte.json" target="_blank" rel="noopener noreferrer"><span data-i="p2_link">View the public record</span> <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="project reveal" style="--d:.16s">
-            <span class="num grad-text" aria-hidden="true">03</span>
-            <div>
-              <h3>Server tooling &amp; monitoring</h3>
-              <p>Scripts and scheduled tasks that keep Windows servers running smoothly, with checks that surface problems early and recover from them cleanly.</p>
-            </div>
-            <ul class="tags" aria-label="Technologies"><li><span>Windows</span></li><li><span>Monitoring</span></li></ul>
+          <article class="pcard reveal" style="--d:.21s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+            <h3 data-i="p3_t">Open source, served securely</h3>
+            <p data-i="p3_p">The source of this very site is public, and it is served over HTTPS from GitHub Pages. Read the code, or check the commit history.</p>
+            <a class="more" href="https://github.com/w44mwtksn4-blip/w44mwtksn4-blip.github.io" target="_blank" rel="noopener noreferrer"><span data-i="p3_link">Read the source</span> <span aria-hidden="true">↗</span></a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i="proc_eyebrow">How I work</p>
+        <h2 class="title reveal" style="--d:.06s" data-i="proc_title">Project-based, and clear from the start.</h2>
+        <p class="sub reveal" style="--d:.12s" data-i="proc_sub">I take on freelance projects one at a time. You always know what you are getting, and what it will cost, before work begins.</p>
+
+        <ol class="steps">
+          <li class="step reveal" style="--d:.04s"><span class="sn" aria-hidden="true">01</span><h3 data-i="s1_t">Brief</h3><p data-i="s1_p">You describe what you need. I ask the questions that pin down scope, constraints and what “done” looks like.</p></li>
+          <li class="step reveal" style="--d:.1s"><span class="sn" aria-hidden="true">02</span><h3 data-i="s2_t">Quote</h3><p data-i="s2_p">You receive a clear quote and an agreed plan. Nothing starts until you are happy with both.</p></li>
+          <li class="step reveal" style="--d:.16s"><span class="sn" aria-hidden="true">03</span><h3 data-i="s3_t">Build</h3><p data-i="s3_p">I build it in Python, keep you updated as it takes shape, and test it properly before it goes live.</p></li>
+          <li class="step reveal" style="--d:.22s"><span class="sn" aria-hidden="true">04</span><h3 data-i="s4_t">Handover &amp; support</h3><p data-i="s4_p">You receive the finished work with setup notes, and we agree what follow-up support looks like.</p></li>
+        </ol>
+
+        <div class="terms">
+          <div class="term-item reveal" style="--d:.05s"><small data-i="t1_k">Engagement</small><b data-i="t1_v">Freelance, project-based</b></div>
+          <div class="term-item reveal" style="--d:.12s"><small data-i="t2_k">Pricing</small><b data-i="t2_v">Quoted per project: get in touch</b></div>
+          <div class="term-item reveal" style="--d:.19s"><small data-i="t3_k">Timeline</small><b data-i="t3_v">Agreed up front, per project</b></div>
         </div>
       </div>
     </section>
@@ -240,15 +300,31 @@
     <section id="contact">
       <div class="wrap">
         <div class="contact-card reveal">
-          <p class="eyebrow">Contact</p>
-          <h2 class="title">Let’s build something dependable.</h2>
-          <p class="sub">The best way to reach me is through my GitHub profile. Say hello, browse my work or start a conversation.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-              github.com/w44mwtksn4-blip
-            </a>
-          </div>
+          <p class="eyebrow" data-i="contact_eyebrow">Contact</p>
+          <h2 class="title" data-i="contact_title">Let’s build something dependable.</h2>
+          <p class="sub" data-i="contact_sub">Tell me what you need and I will reply with questions or a plan. Reach me on Discord or GitHub.</p>
+
+          <ul class="channels">
+            <li class="channel">
+              <span class="ch-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></span>
+              <span class="ch-body"><small data-i="ch_discord">Discord</small><b class="mono" id="discord-name">soysxl</b></span>
+              <button type="button" class="copy" id="copy-discord" data-copy="soysxl"><span data-i="copy">Copy username</span></button>
+            </li>
+            <li class="channel">
+              <span class="ch-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></span>
+              <span class="ch-body"><small>GitHub</small><b class="mono">w44mwtksn4-blip</b></span>
+              <a class="copy" href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer"><span data-i="open">Open profile</span></a>
+            </li>
+            <!-- EMAIL (not shown yet). To add an email address later, delete these comment markers
+                 and replace the two EMAIL values below (the mailto link and the visible text).
+            <li class="channel" id="channel-email">
+              <span class="ch-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span class="ch-body"><small data-i="ch_email">Email</small><b class="mono">EMAIL</b></span>
+              <a class="copy" href="mailto:EMAIL"><span data-i="write">Write to me</span></a>
+            </li>
+            -->
+          </ul>
+          <p class="copied" id="copied" role="status" aria-live="polite"></p>
         </div>
       </div>
     </section>
@@ -256,8 +332,8 @@
 
   <footer>
     <div class="wrap">
-      <p><span class="mono">nullbyte</span> · <span id="year"></span> Backend &amp; automation developer</p>
-      <p><a href="#top">Back to top ↑</a></p>
+      <p><span class="mono">nullbyte</span> · <span id="year"></span> <span data-i="foot">Backend &amp; automation developer</span></p>
+      <p><a href="#top" data-i="top">Back to top ↑</a></p>
     </div>
   </footer>
 
