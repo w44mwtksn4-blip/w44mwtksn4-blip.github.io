@@ -330,11 +330,6 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
 .request h3 { font-size: 1.2rem; font-weight: 650; margin-bottom: 0.35rem; }
 .request p { color: var(--muted); max-width: 40rem; }
 
-.mini-title { font-family: var(--mono); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); margin: 3.5rem 0 1.1rem; }
-.caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.caps li { padding: 1.3rem 1.4rem; border-radius: 16px; border: 1px solid var(--border); background: var(--surface); display: grid; gap: 0.4rem; }
-.caps b { font-weight: 650; font-size: 1.02rem; }
-.caps span { color: var(--muted); font-size: 0.95rem; }
 
 /* ---- v2: proof ---- */
 .proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3rem; }
@@ -381,7 +376,7 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
 .copied { min-height: 1.5rem; margin-top: 1rem; color: #6ee7b7; font-size: 0.92rem; }
 
 @media (max-width: 960px) {
-  .caps, .proof, .terms { grid-template-columns: 1fr; }
+  .proof, .terms { grid-template-columns: 1fr; }
   .steps { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
@@ -406,3 +401,7 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
   .repos.solo .repo { grid-template-columns: 1fr; padding: 1.5rem; }
   .repos.solo .repo-meta { grid-column: 1; grid-row: auto; justify-content: flex-start; }
 }
+
+.live-note { margin: 1rem 0 0; font-size: 0.88rem; color: var(--muted); }
+.live-note a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+.live-note[hidden] { display: none; }

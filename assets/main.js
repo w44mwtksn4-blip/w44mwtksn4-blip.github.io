@@ -47,22 +47,17 @@
     about_p1: 'Ben bir <strong>backend ve otomasyon geliştiricisiyim</strong>. Zamanımın çoğu Python, REST API’ler ve Windows sunucularına gidiyor: servisleri birbirine bağlayan ve güvenilir tutan araçlar geliştiriyorum.',
     about_p2: 'Önem verdiğim şeyler: <strong>temiz kod, öngörülebilir davranış ve ayakta kalan sistemler</strong>. Yani düzenli bir yapı, dikkatli hata yönetimi ve kimse sormadan neler olduğunu söyleyen izleme.',
     fact1: 'Python', fact1s: 'ana dil', fact2: 'Backend ve sunucular', fact2s: 'API, servisler, Windows', fact3: 'Otomasyon', fact3s: 'zamanlanmış işler ve izleme',
-    svc_eyebrow: 'Ne yapıyorum', svc_title: 'Üç iş, doğru yapılmış.', svc_sub: 'Önemli sorunlara özenle uygulanan, odaklı bir beceri seti.',
-    svc1_t: 'Discord botları', svc1_p: 'Python ile yazılmış, hızlı ve düzenli botlar: slash komutlarından bildirimlere, gece gündüz çalışan arka plan işçilerine kadar.',
-    svc2_t: 'API ve backend entegrasyonları', svc2_p: 'Servisler arasında güvenilir bağlantılar. Temiz istek yönetimi, mantıklı hız sınırlama ve zarif hata toleransı; veri gitmesi gereken yere gider.',
-    svc3_t: 'Sunucu ve VDS otomasyonu', svc3_p: 'Windows VDS kurulumu ve dağıtımı, zamanlanmış işler ve servisleri sağlıklı, güvenli ve kurtarılabilir tutan izleme.',
-    stack_eyebrow: 'Araç seti', stack_title: 'Sık kullandığım araçlar.', stack_g1: 'Diller ve servisler', stack_g2: 'Operasyon',
-    chip_backend: 'Backend otomasyonu', chip_win: 'Windows sunucu yönetimi', chip_mon: 'Servis izleme', chip_jobs: 'Zamanlanmış işler', chip_vds: 'VDS yönetimi',
-    work_eyebrow: 'Seçilmiş çalışmalar', work_title: 'Herkese açık işler, doğrudan GitHub’dan.',
-    work_sub: 'Bunlar herkese açık depolarım. GitHub’dan canlı çekiliyor, yani burada gördüğünüz şey gerçekten var olan şey.',
+    svc_eyebrow: 'Ne yapıyorum', svc_title: 'Üç iş, doğru yapılmış.', svc_sub: 'Önemli sorunlara özenle uygulanan, odaklı ve pratik işler.',
+    svc1_t: 'Discord botları', svc1_p: 'Düzenli yapılandırılmış Python botları: slash komutlarından bildirimlere, arka plan işçilerine kadar; gece gündüz çevrimiçi kalmak ve hatalardan toparlanmak için tasarlandı.',
+    svc2_t: 'API ve backend entegrasyonları', svc2_p: 'Dış API’lerden veri çekip bu veriye göre işlem yapan entegrasyonlar: temiz istek yönetimi, mantıklı hız sınırlama, yeniden denemeler ve zarif hata toleransı.',
+    svc3_t: 'Sunucu ve VDS otomasyonu', svc3_p: 'Windows VDS kurulumu ve dağıtımı, betikler ve zamanlanmış görevler; sorunları erkenden yakalayan, servisleri sağlıklı, güvenli ve kurtarılabilir tutan izleme.',
+    stack_eyebrow: 'Araç seti', stack_title: 'Sık kullandığım araçlar.', stack_g1: 'Diller ve kütüphaneler', stack_g2: 'Veri ve API’ler', stack_g3: 'Geliştirme ve yayın', stack_g4: 'Sunucu ve operasyon',
+    work_eyebrow: 'Çalışmalar', work_title: 'Açık işler.',
+    work_sub: 'Kendiniz okuyabileceğiniz açık projeler ve kaynak kod; daha fazlası istek üzerine paylaşılır.',
     repo_site_desc: 'Kişisel geliştirici sayfası',
     req_t: 'Daha fazla seçilmiş çalışma istek üzerine paylaşılır', req_p: 'Yaptıklarımın bir kısmı özel ya da başkaları için hazırlandı, bu yüzden herkese açık değil. Projenize uygun örnekler görmek isterseniz yeter ki isteyin.', req_cta: 'Örnek iste',
-    cap_t: 'Neler geliştiriyorum',
-    cap1_t: 'Discord botları', cap1_p: 'Slash komutları, bildirimler ve çevrimiçi kalmak ile hatalardan toparlanmak için tasarlanmış işçiler.',
-    cap2_t: 'API tabanlı otomasyon', cap2_p: 'Dış API’lerden veri çekip bu veriye göre işlem yapan entegrasyonlar; limitlere, yeniden denemelere ve uç durumlara özen gösterilerek.',
-    cap3_t: 'Sunucu araçları ve izleme', cap3_p: 'Windows sunucularını ayakta tutan betikler ve zamanlanmış görevler; sorunları erkenden yakalayan kontroller.',
     proof_eyebrow: 'Kanıtlar', proof_title: 'İddia değil, doğrulanabilir.', proof_sub: 'Aşağıdakilerin hepsini bağımsız olarak kontrol edebilirsiniz.',
-    p1_t: 'Canlı GitHub etkinliği', p1_repos: 'Herkese açık depo', p1_push: 'Son herkese açık gönderim', p1_link: 'GitHub profilini aç',
+    p1_t: 'GitHub etkinliği', p1_repos: 'Herkese açık depo', p1_push: 'Son herkese açık gönderim', p1_link: 'GitHub profilini aç',
     p2_t: 'Doğrulanmış alan adı', p2_p: '<span class="mono">nullbyte.is-a.dev</span>, açık kaynaklı is-a.dev kayıt sistemi üzerinden alındı ve Discord profilime doğrulanmış alan adı olarak bağlı.', p2_link: 'Herkese açık kaydı gör',
     p3_t: 'Açık kaynak, güvenli yayın', p3_p: 'Bu sitenin kaynak kodu herkese açık ve GitHub Pages üzerinden HTTPS ile sunuluyor. Kodu okuyabilir ya da commit geçmişine bakabilirsiniz.', p3_link: 'Kaynak kodu oku',
     proc_eyebrow: 'Nasıl çalışırım', proc_title: 'Proje bazlı ve baştan net.', proc_sub: 'Serbest projeleri tek tek üstleniyorum. İş başlamadan önce ne alacağınızı ve ne tutacağını her zaman bilirsiniz.',
@@ -76,12 +71,12 @@
     ch_discord: 'Discord', ch_email: 'E-posta', copy: 'Kullanıcı adını kopyala', open: 'Profili aç', write: 'Bana yazın',
     foot: 'Backend ve otomasyon geliştiricisi', top: 'Başa dön ↑',
     copied: 'Discord kullanıcı adı kopyalandı: soysxl', copy_fail: 'Kopyalanamadı. Kullanıcı adı: soysxl',
-    live_na: 'GitHub’da gör',
+    live_err: 'Canlı veri yenilenemedi, bu yüzden son bilinen değerler gösteriliyor. <a href="https://github.com/w44mwtksn4-blip" target="_blank" rel="noopener noreferrer">GitHub’da gör ↗</a>',
     title: 'nullbyte — Backend ve Otomasyon Geliştiricisi',
     desc: 'nullbyte; Python ile Discord botları, API ve backend entegrasyonları ile VDS otomasyonu ve dağıtımı geliştiren bir backend ve otomasyon geliştiricisidir.'
   };
   var EN = {
-    copied: 'Discord username copied: soysxl', copy_fail: 'Could not copy. Username: soysxl', live_na: 'See GitHub',
+    copied: 'Discord username copied: soysxl', copy_fail: 'Could not copy. Username: soysxl', 
     title: document.title,
     desc: (document.querySelector('meta[name="description"]') || {}).content || ''
   };
@@ -147,14 +142,17 @@
   var FILE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M15 3v6h6"/></svg>';
 
   function fmtDate(iso) {
-    try { return new Date(iso).toLocaleDateString(lang === 'tr' ? 'tr-TR' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); }
+    try { return new Date(iso).toLocaleDateString(lang === 'tr' ? 'tr-TR' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }); }
     catch (e) { return iso.slice(0, 10); }
   }
 
   function renderRepos() {
     if (!reposEl || !gh.repos) return;
-    var list = gh.repos.filter(function (r) { return !r.fork && !r.private && !r.archived; })
-      .sort(function (a, b) { return (b.stargazers_count - a.stargazers_count) || (new Date(b.pushed_at) - new Date(a.pushed_at)); });
+    var list = gh.repos.filter(function (r) { return !r.fork && !r.private && !r.archived; });
+    /* The site's own repo is only listed while there is nothing better to show. */
+    var others = list.filter(function (r) { return r.name !== USER + '.github.io'; });
+    if (others.length) list = others;
+    list = list.sort(function (a, b) { return (b.stargazers_count - a.stargazers_count) || (new Date(b.pushed_at) - new Date(a.pushed_at)); });
     if (!list.length) return;
     reposEl.textContent = '';
     reposEl.classList.toggle('solo', list.length === 1);
@@ -182,27 +180,42 @@
     });
   }
 
+  /* Static values are rendered in the HTML; the API only refreshes them. A bare dash is never shown. */
   function renderLive() {
-    if (!liveRepos) return;
+    if (!liveRepos || !livePush) return;
     if (gh.user && typeof gh.user.public_repos === 'number') liveRepos.textContent = String(gh.user.public_repos);
+    var iso = livePush.getAttribute('data-iso');
     if (gh.repos) {
       var own = gh.repos.filter(function (r) { return !r.fork && r.pushed_at; });
       if (own.length) {
-        var latest = own.reduce(function (m, r) { return new Date(r.pushed_at) > new Date(m) ? r.pushed_at : m; }, own[0].pushed_at);
-        livePush.textContent = fmtDate(latest);
+        iso = own.reduce(function (m, r) { return new Date(r.pushed_at) > new Date(m) ? r.pushed_at : m; }, own[0].pushed_at);
+        livePush.setAttribute('data-iso', iso);
       }
+    }
+    if (iso) {
+      livePush.textContent = '';
+      var tm = document.createElement('time'); tm.setAttribute('datetime', iso); tm.textContent = fmtDate(iso);
+      livePush.appendChild(tm);
     }
   }
 
   relayout.push(renderRepos, renderLive);
 
+  var liveNote = document.getElementById('live-note');
   function api(path) {
-    return fetch('https://api.github.com' + path, { headers: { Accept: 'application/vnd.github+json' } })
+    var ctl = ('AbortController' in window) ? new AbortController() : null;
+    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 5000);
+    var opts = { headers: { Accept: 'application/vnd.github+json' } };
+    if (ctl) opts.signal = ctl.signal;
+    var p = fetch('https://api.github.com' + path, opts)
       .then(function (res) { if (!res.ok) throw new Error(String(res.status)); return res.json(); });
+    var race = new Promise(function (resolve, reject) { setTimeout(function () { reject(new Error('timeout')); }, 5000); });
+    return Promise.race([p, race]).then(function (v) { clearTimeout(timer); return v; }, function (err) { clearTimeout(timer); throw err; });
   }
-  if ('fetch' in window) {
-    api('/users/' + USER).then(function (u) { gh.user = u; renderLive(); }).catch(function () { if (liveRepos) liveRepos.textContent = t('live_na'); });
-    api('/users/' + USER + '/repos?per_page=100&type=owner&sort=pushed').then(function (r) { gh.repos = r; renderRepos(); renderLive(); }).catch(function () { if (livePush) livePush.textContent = t('live_na'); });
+  function liveFailed() { if (liveNote) liveNote.hidden = false; }
+  if ('fetch' in window && 'Promise' in window) {
+    api('/users/' + USER).then(function (u) { gh.user = u; renderLive(); }).catch(liveFailed);
+    api('/users/' + USER + '/repos?per_page=100&type=owner&sort=pushed').then(function (r) { gh.repos = r; renderRepos(); renderLive(); }).catch(liveFailed);
   }
 
   setLang(initial, false);
