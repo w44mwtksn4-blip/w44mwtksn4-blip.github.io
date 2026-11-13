@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal developer page of nullbyte — backend and automation work with Python, APIs, and Windows servers.">
+  <title>nullbyte</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23141311'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='28' fill='%23c4a574'%3ENB%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #141311;
+      --bg-elevated: #1c1b18;
+      --fg: #e8e4db;
+      --muted: #9a9487;
+      --accent: #c4a574;
+      --line: #2e2c27;
+      --focus: #e2c99a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+
+    .bar {
+      height: 4px;
+      background: var(--accent);
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3.25rem 1.5rem 4rem;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .mark {
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.85rem;
+    }
+
+    h1 {
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+      font-weight: 400;
+      font-size: clamp(2.4rem, 7vw, 3.4rem);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin: 0 0 0.6rem;
+    }
+
+    .lede {
+      margin: 0;
+      color: var(--muted);
+      max-width: 32rem;
+    }
+
+    section + section {
+      margin-top: 2.4rem;
+    }
+
+    h2 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.7rem;
+    }
+
+    p { margin: 0 0 0.9rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul.skills {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    ul.skills li {
+      background: var(--bg-elevated);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.25rem 0.8rem;
+      font-size: 0.92rem;
+      color: var(--fg);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover { color: var(--focus); }
+
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    footer {
+      margin-top: 3.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="bar" aria-hidden="true"></div>
+  <main>
+    <header>
+      <p class="mark">Developer page</p>
+      <h1>nullbyte</h1>
+      <p class="lede">Backend and automation work, written quietly and kept running.</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m a backend and automation developer. Most of my time goes into Python, REST APIs, and Windows servers — building the kind of tools that connect services and keep them reliable without much ceremony.</p>
+      <p>This site is a simple public home for that work. There is no product pitch here, just a place to start.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>Backend automation</li>
+        <li>REST API integrations</li>
+        <li>Service monitoring</li>
+        <li>Windows server administration</li>
+      </ul>
+    </section>
+
+    <section id="work">
+      <h2>What I work on</h2>
+      <p>I write practical automation: scheduled jobs, API integrations, and monitoring around the services I operate. The focus is on clear scripts, predictable behavior, and systems that stay up.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is through my GitHub profile: <a href="https://github.com/w44mwtksn4-blip">github.com/w44mwtksn4-blip</a>.</p>
+    </section>
+
+    <footer>
+      <p>nullbyte · personal developer page</p>
+    </footer>
+  </main>
+</body>
+</html>
